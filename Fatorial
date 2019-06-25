@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int fator(int num, int fatorial);
+
+int main()
+{
+    int num;
+    int fatorial;
+
+    printf("Digite o numero do qual quer o fatorial: \n");
+    scanf("%d", &num);
+
+    fatorial = fator(num, fatorial);
+
+    if(num > 0)
+    {
+    printf("Este eh o fatorial: %d", fatorial);
+    }
+}
+
+int fator(int num, int fatorial)
+{
+
+    if(num == 0)
+     {
+        fatorial = printf("Fatorial de zero eh: 1");
+     }
+    fatorial = 1;
+    while(num > 0)
+      {
+        fatorial = fatorial * num;
+        num = --num;
+      }
+      fatorial;
+
+    if(num < 0)
+     {
+        fatorial = printf("Nao eh possivel a fatoracao de numeros inteiros negativos.");
+     }
+
+        return (fatorial);
+}
